@@ -31,17 +31,17 @@ const todos = reactive<user[]>([])
 
 
 onMounted(() => {
-  // fetch("https://jsonplaceholder.typicode.com/todos")
+  console.log('onmounted')
   //     .then((r)=>r.json())
   //     .then(todoData=>{
   //           todos.push(...todoData)
   //     })
 
-  // axios.get<user>("https://jsonplaceholder.typicode.com/todos")
-  //     .then((response: axios<user>) => {
-  //       const User: user = response.data;
-  //       todos.push(...response.data)
-  //     })
+  axios.get<user>("https://jsonplaceholder.typicode.com/todos")
+      .then((response: axios<user>) => {
+        const User: user = response.data;
+        todos.push(...response.data)
+      })
 })
 
 
