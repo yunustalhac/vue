@@ -37,11 +37,11 @@ onMounted(() => {
   //           todos.push(...todoData)
   //     })
 
-  axios.get<user>("https://jsonplaceholder.typicode.com/todos")
-      .then((response: axios<user>) => {
-        const User: user = response.data;
-        todos.push(...response.data)
-      })
+  // axios.get<user>("https://jsonplaceholder.typicode.com/todos")
+  //     .then((response: axios<user>) => {
+  //       const User: user = response.data;
+  //       todos.push(...response.data)
+  //     })
 })
 
 
