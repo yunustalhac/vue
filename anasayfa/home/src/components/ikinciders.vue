@@ -1,12 +1,12 @@
 <template>
   <div>
-    <dersbir/>
+    <iki></iki>
   </div>
 </template>
 
 <script setup lang="ts">
-import dersbir from "../../../../ders1/dersbir/src/App.vue"
-import axios from "axios";
+import iki from "../../../../ders2/dersiki/src/App.vue"
+
 </script>
 
 <style lang="scss" scoped>

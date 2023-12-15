@@ -1,13 +1,18 @@
 // src/router/index.js
 import { createRouter, createWebHistory } from 'vue-router';
-// @ts-ignore
-import Birinciders from "@/components/birinciders.vue";
+import birinciders from "@/components/birinciders.vue";
+import ikinciders from "@/components/ikinciders.vue"
 
 const routes = [
     {
-        path: '/birinci',
+        path: '/birinciders',
         name: 'birinci',
-        component: Birinciders,
+        component: birinciders,
+    },
+    {
+        path: '/ikinciders',
+        name: 'ikinci',
+        component: ikinciders,
     },
 ];
 
