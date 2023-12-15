@@ -14,48 +14,42 @@
 
 <script setup lang="ts">
 
-import {onMounted, reactive} from "vue";
+import {onMounted, reactive, ref} from "vue";
 import axios from "axios";
 
-
-function dnm(e: Event) {
-  console.log(e)
+interface User {
+  id: number;
+  title: string;
 }
 
-interface user {
-  id: number
-  title: string
-}
-
-const todos = reactive<user[]>([])
+const todos = reactive<User[]>([]);
 
 
 onMounted(() => {
-  console.log('onmounted')
-  //     .then((r)=>r.json())
-  //     .then(todoData=>{
-  //           todos.push(...todoData)
-  //     })
+  console.log('onmounted');
 
-  axios.get<user>("https://jsonplaceholder.typicode.com/todos")
-      .then((response: axios<user>) => {
-        const User: user = response.data;
+  axios.get<User[]>("https://jsonplaceholder.typicode.com/todos")
+      .then((response) => {
         todos.push(...response.data)
-      })
-})
+      });
+});
 
-
-interface name {
-  name: string
-  id: number
+interface Name {
+  name: string;
+  id: number;
 }
 
-const user = reactive<name>({
+const user = ref<Name>({
   id: 1,
   name: "yunus"
-})
+});
+
+function dnm(e: Event) {
+  console.log(e);
+}
 
 </script>
+
 
 <style lang="scss" scoped>
 
