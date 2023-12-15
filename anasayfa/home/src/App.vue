@@ -15,6 +15,8 @@
 <script setup lang="ts">
 </script>
 
-<style lang="scss" scoped>
-
+<style>
+* {
+  user-select: none;
+}
 </style>
