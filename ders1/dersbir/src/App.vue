@@ -26,7 +26,7 @@ const todos = reactive<User[]>([]);
 
 
 onMounted(() => {
-  console.log('onmounted');
+  console.log('onMounted');
 
   axios.get<User[]>("https://jsonplaceholder.typicode.com/todos")
       .then((response) => {
