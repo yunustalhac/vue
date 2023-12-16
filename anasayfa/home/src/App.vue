@@ -6,6 +6,7 @@
     <router-link to="/">anasayfa</router-link>
     <router-link to="/birinciders">birinci</router-link>
     <router-link to="/ikinciders">ikinci</router-link>
+    <router-link to="/dersuc">üçüncü</router-link>
     <router-view></router-view>
 
 
