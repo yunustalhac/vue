@@ -3,6 +3,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import birinciders from "@/components/birinciders.vue";
 import ikinciders from "@/components/ikinciders.vue"
 import ucuncuders from "@/components/ucuncuders.vue"
+import dorduncuders from "@/components/dorduncuders.vue"
+import besinciders from "@/components/besinciders.vue"
 
 const routes = [
     {
@@ -18,6 +20,14 @@ const routes = [
         path: '/dersuc',
         name: 'dersuc',
         component: ucuncuders,
+    }, {
+        path: '/dorduncuders',
+        name: 'dorduncuders',
+        component:dorduncuders ,
+    }, {
+        path: '/besinciders',
+        name: 'dersbes',
+        component: besinciders,
     },
 ];
 
