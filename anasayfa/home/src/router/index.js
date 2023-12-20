@@ -5,6 +5,7 @@ import ikinciders from "@/components/ikinciders.vue"
 import ucuncuders from "@/components/ucuncuders.vue"
 import dorduncuders from "@/components/dorduncuders.vue"
 import besinciders from "@/components/besinciders.vue"
+import dersalti from "@/components/altinciders.vue"
 
 const routes = [
     {
@@ -28,6 +29,10 @@ const routes = [
         path: '/besinciders',
         name: 'dersbes',
         component: besinciders,
+    }, {
+        path: '/dersalti',
+        name: 'alti',
+        component: dersalti,
     },
 ];
 
