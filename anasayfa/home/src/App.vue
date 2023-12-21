@@ -10,6 +10,7 @@
     <router-link to="/dorduncuders">dördüncü</router-link>
     <router-link to="/besinciders">beşinci</router-link>
     <router-link to="/dersalti">altinci</router-link>
+    <router-link to="/dersyedi">yedinci</router-link>
     <router-view></router-view>
 
 
