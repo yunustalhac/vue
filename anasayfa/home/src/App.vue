@@ -12,6 +12,7 @@
     <router-link to="/dersalti">altinci</router-link>
     <router-link to="/dersyedi">yedinci</router-link>
     <router-link to="/dersekiz">sekizinci</router-link>
+    <router-link to="/dersdokuz">dokuzuncu</router-link>
     <router-view></router-view>
 
 
