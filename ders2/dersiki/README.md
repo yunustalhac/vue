@@ -1,4 +1,20 @@
-# dersiki
+# dersiki       
+
+
+
+
+**ders2**
+>**reactive** olayları otomatik bir şekilde yönetmeye yarar
+>**ref** olayların yan etkilerini yönetmemize olanak verir
+
+### **örnek olarak**
+**ref**
+bir evde odalar arasında geçiş yaparken lambayı yanıp sönmeden kontrol etmek gibi düşünülebilir. Yani odalardan birine girdiğinizde lamba yanar, odadan çıktığınızda söner.
+
+**reactive**
+sanki bir müzik çaların otomatik olarak parçayı değiştirmesi gibi düşünülebilir. Yani siz bir şeyi takip etmezsiniz, sadece değişiklik olduğunda otomatik tepki alırsınız
+
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
