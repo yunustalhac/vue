@@ -1,5 +1,16 @@
 # dersdort
 
+# ders4
+
+>**indirme işlemi için ** yarn create vite
+>dedikten sonra proje adını giriyoruz ardından bize mesela ts ekleyelimmi gibi sorular soruyor yüklemek istediklerimizi seçiyoruz ve indirme işlemini tamamlıyoruz.
+>Sonra cd ile proje klasörümüzün içine giriyoruz.
+>Ardından yarn diyip ilgili bağımlılıklar yükleniyor
+>**yarn dev ** dediğimiz zaman uygulama ayağa kalkıyor
+>**yarn build** diyip projeyi bir yerde yayınlana bilecek bir hale getiroyor
+>**src** klasörü altında projemizin kendisi bulunuyor
+>
+
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
