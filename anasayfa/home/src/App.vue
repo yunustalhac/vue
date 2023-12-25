@@ -3,16 +3,17 @@
     <h1>ana sayfa</h1>
 
 
-    <router-link to="/">anasayfa</router-link>
-    <router-link to="/birinciders">birinci</router-link>
-    <router-link to="/ikinciders">ikinci</router-link>
-    <router-link to="/dersuc">üçüncü</router-link>
-    <router-link to="/dorduncuders">dördüncü</router-link>
-    <router-link to="/besinciders">beşinci</router-link>
-    <router-link to="/dersalti">altinci</router-link>
-    <router-link to="/dersyedi">yedinci</router-link>
-    <router-link to="/dersekiz">sekizinci</router-link>
-    <router-link to="/dersdokuz">dokuzuncu</router-link>
+    <router-link class="box" to="/">anasayfa</router-link>
+    <router-link class="box" to="/birinciders">birinci</router-link>
+    <router-link class="box" to="/ikinciders">ikinci</router-link>
+    <router-link class="box" to="/dersuc">üçüncü</router-link>
+    <router-link class="box" to="/dorduncuders">dördüncü</router-link>
+    <router-link class="box" to="/besinciders">beşinci</router-link>
+    <router-link class="box" to="/dersalti">altinci</router-link>
+    <router-link class="box" to="/dersyedi">yedinci</router-link>
+    <router-link class="box" to="/dersekiz">sekizinci</router-link>
+    <router-link class="box" to="/dersdokuz">dokuzuncu</router-link>
+    <router-link class="box" to="/derson">onuncu</router-link>
     <router-view></router-view>
 
 
@@ -25,5 +26,9 @@
 <style>
 * {
   user-select: none;
+}
+
+.box {
+  border-left: 2px solid black;
 }
 </style>

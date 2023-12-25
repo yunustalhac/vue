@@ -5,5 +5,5 @@
 </template>
 
 <script setup>
-import dersdokuz from "../../../../vue9/dersdokuz/src/App.vue"
+import dersdokuz from "../../../../ders9/dersdokuz/src/App.vue"
 </script>

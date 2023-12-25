@@ -9,6 +9,7 @@ import dersalti from "@/components/altinciders.vue"
 import dersyedi from "@/components/dersyedi.vue"
 import dersekiz from "@/components/sekizinciders.vue"
 import dersdokuz from "@/components/dersdokuz.vue"
+import derson from "@/components/derson.vue"
 
 const routes = [
     {
@@ -48,6 +49,10 @@ const routes = [
         path: '/dersdokuz',
         name: 'dokuz',
         component: dersdokuz,
+    }, {
+        path: '/derson',
+        name: 'on',
+        component: derson,
     },
 ];
 
