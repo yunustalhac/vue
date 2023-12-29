@@ -1,6 +1,6 @@
 <template>
   <div>
-
+    <dersonbir/>
   </div>
 </template>
 

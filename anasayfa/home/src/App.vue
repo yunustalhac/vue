@@ -14,7 +14,8 @@
     <router-link class="box" to="/dersekiz">sekizinci</router-link>
     <router-link class="box" to="/dersdokuz">dokuzuncu</router-link>
     <router-link class="box" to="/derson">onuncu</router-link>
-    <router-link class="box" to="/dersonbir">onbirinci</router-link>
+    <router-link class="box" to="/onbir">onbirinci</router-link>
+    <router-link class="box" to="/oniki">onikinci</router-link>
     <router-view></router-view>
 
 
