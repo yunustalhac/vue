@@ -10,6 +10,7 @@ import dersyedi from "@/components/dersyedi.vue"
 import dersekiz from "@/components/sekizinciders.vue"
 import dersdokuz from "@/components/dersdokuz.vue"
 import derson from "@/components/derson.vue"
+import dersonbir from "@/components/dersonbir.vue.vue"
 
 const routes = [
     {
@@ -53,6 +54,10 @@ const routes = [
         path: '/derson',
         name: 'on',
         component: derson,
+    },{
+        path: '/onbir',
+        name: 'onbir',
+        component: dersonbir,
     },
 ];
 
