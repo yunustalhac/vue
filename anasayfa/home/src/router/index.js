@@ -12,6 +12,7 @@ import dersdokuz from "@/components/dersdokuz.vue"
 import derson from "@/components/derson.vue"
 import dersonbir from "@/components/dersonbir.vue"
 import dersoniki from "@/components/dersoniki.vue"
+import dersonuc from "@/components/dersonuc.vue"
 
 const routes = [
     {
@@ -63,6 +64,10 @@ const routes = [
         path: '/oniki',
         name: 'oniki',
         component: dersoniki,
+    }, {
+        path: '/onuc',
+        name: 'onuc',
+        component: dersonuc,
     },
 ];
 

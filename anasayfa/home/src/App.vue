@@ -16,6 +16,7 @@
     <router-link class="box" to="/derson">onuncu</router-link>
     <router-link class="box" to="/onbir">onbirinci</router-link>
     <router-link class="box" to="/oniki">onikinci</router-link>
+    <router-link class="box" to="/onuc">onüçüncü</router-link>
     <router-view></router-view>
 
 
