@@ -18,6 +18,7 @@
     <router-link class="box" to="/oniki">onikinci</router-link>
     <router-link class="box" to="/onuc">onüçüncü</router-link>
     <router-link class="box" to="/ondort">ondördüncü</router-link>
+    <router-link class="box" to="/onbes">onbeşinci</router-link>
     <router-view></router-view>
 
 

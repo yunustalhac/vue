@@ -14,6 +14,7 @@ import dersonbir from "@/components/dersonbir.vue"
 import dersoniki from "@/components/dersoniki.vue"
 import dersonuc from "@/components/dersonuc.vue"
 import dersondort from "@/components/dersondort.vue"
+import dersonbes from "@/components/dersonbes.vue"
 
 const routes = [
     {
@@ -73,6 +74,10 @@ const routes = [
         path: '/ondort',
         name: 'ondort',
         component: dersondort,
+    },{
+        path: '/onbes',
+        name: 'onbes',
+        component: dersonbes,
     },
 ];
 

@@ -12,7 +12,7 @@
 </template>
 
 <script setup lang="ts">
-import myButton from "@/components/page.vue"
+import myButton from "./components/page.vue"
 import {ref} from "vue";
 
 const clickFunction = () => {
