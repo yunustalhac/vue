@@ -1,4 +1,11 @@
+# ders17
+**fetchApi**
+>js in kendi içinde bulunan bir şeydir
+> **generic** mesela bir function un bir şeye bağımlı olmadan çalışmasını sağlayan bir şeydir
+
 # dersonyedi
+
+
 
 This template should help get you started developing with Vue 3 in Vite.
 
