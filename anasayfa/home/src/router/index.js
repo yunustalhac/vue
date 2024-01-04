@@ -17,6 +17,7 @@ import dersondort from "@/components/dersondort.vue"
 import dersonbes from "@/components/dersonbes.vue"
 import dersonalti from "@/components/onaltinciders.vue"
 import dersonyedi from "@/components/dersonyedi.vue"
+import dersonsekiz from "@/components/onsekizinciders.vue"
 
 const routes = [
     {
@@ -88,6 +89,10 @@ const routes = [
         path: '/onyedi',
         name: 'onyedi',
         component: dersonyedi,
+    },{
+        path: '/onsekiz',
+        name: 'onsekiz',
+        component: dersonsekiz,
     },
 ];
 

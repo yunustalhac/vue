@@ -21,6 +21,7 @@
     <router-link class="box" to="/onbes">onbeşinci</router-link>
     <router-link class="box" to="/onalti">onaltıncı</router-link>
     <router-link class="box" to="/onyedi">onyedinci</router-link>
+    <router-link class="box" to="/onsekiz">onsekizinci</router-link>
     <router-view></router-view>
 
 
