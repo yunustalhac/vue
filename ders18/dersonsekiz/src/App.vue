@@ -1,24 +1,23 @@
 <template>
   <div>
 
-    <h1>{{ stor.getCount() }}</h1>
+    <h1>{{ store.getCount() }}</h1>
 
     <ul>
-      <li v-for="i in stor.items">{{ i }}</li>
+      <li v-for="i in store.items">{{ i }}</li>
     </ul>
 
-    <input @keydown.enter="stor.addItem(stor.modal)" v-model="stor.modal" type="text">
-    <button @click="stor.addItem(stor.modal)">ekle</button>
+    <input @keydown.enter="store.addItem(store.modal)" v-model="store.modal" type="text">
+    <button @click="store.addItem(store.modal)">ekle</button>
 
   </div>
 </template>
 
 <script setup>
-import {storShop} from "@/assets/shopingCard.js";
-import {ref} from "vue";
+import {storeShop} from "./store/shopingCard.js";
 
 
-const stor = storShop()
+const store = storeShop()
 </script>
 
 <style lang="scss" scoped>

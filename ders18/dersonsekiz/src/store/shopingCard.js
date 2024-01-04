@@ -1,7 +1,7 @@
 import {defineStore} from "pinia";
 import {ref} from "vue";
 
-export const storShop = defineStore("shopp", () => {
+export const storeShop = defineStore("shopp", () => {
     const items = ref([])
     const modal = ref()
 
