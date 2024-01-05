@@ -1,5 +1,5 @@
 {
-  "name": "home",
+  "name": "dersyirmi",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -9,16 +9,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@formkit/themes": "^1.4.0",
-    "@formkit/vue": "^1.4.0",
     "ant-design-vue": "^4.0.0-rc.6",
-    "axios": "^1.6.2",
-    "pinia": "^2.1.7",
-    "vue": "^3.3.10",
-    "vue-router": "4"
+    "axios": "^1.6.5",
+    "vue": "^3.3.11"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^4.5.1",
-    "vite": "^5.0.5"
+    "@vitejs/plugin-vue": "^4.5.2",
+    "vite": "^5.0.10"
   }
 }

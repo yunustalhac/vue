@@ -1,47 +1,40 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div>
+    <h1>bu bir axios uygulamasıdır</h1>
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+<pre>
+  {{adata}}
+</pre>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup>
+import {onMounted, ref} from "vue";
+import axios from "axios";
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
+const adata = ref()
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+onMounted(()=>{
+  axios.interceptors.request.use((config)=>{
+    console.log(config)
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+    return config
+  })
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
-</style>
+  axios.interceptors.response.use((response)=>{
+    console.log(response)
+
+    return response
+  })
+
+  axios.get("https://jsonplaceholder.typicode.com/todos")
+      .then(response => {
+        adata.value=response.data
+      })
+})
+
+</script>
+
+<style lang="scss" scoped>
+
+</style> 

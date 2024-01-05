@@ -1,13 +1,10 @@
-# ders19
+# ders20
+**ant design**
+>vue tarafında popüler bir kütüphanedir
+> not:vue ekosisteminin çoğu çin merkezlidir
+> bootstrap a kısmen benzer ama bu mükemmel bişey mesela uğraştırmadan çektiğin veriye şekil verebiliyor 
 
-**axios**
-> **interCeptors** yol kesici olarak tanımlayabiliriz. istek gidip cevap gelirken araya girip birşeyler yapmasını
-> isteyebiliriz. bu yüzden bunu kullandıktan sonra return etmemiz lazımdır
-> **request** http de istek işine yarar
-> **response** http de cevap olarak nitelendirilir. cevap gelmiş olur durumu hakkında bilgi verir hata vs..
->axios interface ile de kullanılabilir
-
-# dersondokuz
+# dersyirmi
 
 This template should help get you started developing with Vue 3 in Vite.
 

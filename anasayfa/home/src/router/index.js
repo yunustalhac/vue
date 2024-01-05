@@ -19,6 +19,7 @@ import dersonalti from "@/components/onaltinciders.vue"
 import dersonyedi from "@/components/dersonyedi.vue"
 import dersonsekiz from "@/components/onsekizinciders.vue"
 import dersondokuz from "@/components/dersondokuz.vue"
+import yirmi from "@/components/yirmi.vue"
 
 const routes = [
     {
@@ -98,6 +99,10 @@ const routes = [
         path: '/ondokuz',
         name: 'ondokuz',
         component: dersondokuz,
+    },{
+        path: '/yirmi',
+        name: 'yirmi',
+        component: yirmi,
     },
 ];
 

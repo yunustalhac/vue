@@ -10,7 +10,9 @@ const app = createApp(App)
 const pinia = createPinia()
 app.use(router)
 import {plugin, defaultConfig} from '@formkit/vue'
+import Antd from 'ant-design-vue';
 
+app.use(Antd);
 app.use(plugin, defaultConfig({theme: "genesis"}))
 app.use(pinia)
 
