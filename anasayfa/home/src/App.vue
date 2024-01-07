@@ -18,12 +18,14 @@
     <router-link class="box" to="/oniki">onikinci</router-link>
     <router-link class="box" to="/onuc">onüçüncü</router-link>
     <router-link class="box" to="/ondort">ondördüncü</router-link>
+    <br>
     <router-link class="box" to="/onbes">onbeşinci</router-link>
     <router-link class="box" to="/onalti">onaltıncı</router-link>
     <router-link class="box" to="/onyedi">onyedinci</router-link>
     <router-link class="box" to="/onsekiz">onsekizinci</router-link>
     <router-link class="box" to="/ondokuz">ondokuzuncu</router-link>
     <router-link class="box" to="/yirmi">yirminci</router-link>
+    <router-link class="box" to="/yirmibir">yirmibirinci</router-link>
     <router-view></router-view>
 
 
