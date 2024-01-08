@@ -1,17 +1,16 @@
-interface IUser {
+export interface IUser {
     id: number
     displayName: string
 }
 
 const strogeKeys = {
     USER: "user",
-    IS_AUTH: "isAuth"
+    IS_AUTH: "iswAuth"
 }
 
-class authService {
+class AuthService {
     login(userName: string, password: string): Promise<boolean> {
         if (userName == "deneme" && password == "123") {
-
 
             const user: IUser = {
                 id: 1,
@@ -53,4 +52,4 @@ class authService {
     }
 }
 
-export default new authService()
+export default new AuthService()

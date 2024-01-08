@@ -1,15 +1,16 @@
 <template>
-  <div>
-    <router-link to="/">anasayfa</router-link>
-    <router-link to="/about">about</router-link>
-    <router-link to="/login">login</router-link>
-    <router-view/>
+  <div style="font-size: 24px;margin:5%">
+    <nav>
+      <router-link style="margin-right: 10px;" to="/home">home</router-link>
+      <router-link to="/about">about</router-link>
+      <router-link to="/login">login için</router-link>
+    </nav>
 
     <div v-if="authStore.isAuth&&currentUser">
       welcome: <strong>{{ currentUser.displayName }}</strong>
     <button @click="handleLogout()">logout</button>
     </div>
-
+    <router-view/>
   </div>
 </template>
 
@@ -21,13 +22,15 @@ import {useAuthStore} from "@/store/authStore";
 
 const currentUser = ref()
 const authStore = useAuthStore()
-const handleLogout = async () => {
-  await authStore.logout()
-  location.href = "/login "
-}
+
 onMounted(async () => {
   currentUser.value = await authStore.user
 })
+
+const handleLogout = async () => {
+  await authStore.logout()
+  location.href = "/login "
+} 
 </script>
 
 <style scoped>

@@ -1,7 +1,9 @@
-import {defineStore} from "pinia";
 import authService from "../services/authService";
+import {defineStore} from "pinia";
 
-export const useAuthStore = defineStore("authStore", () => {
+
+export const useAuthStore=defineStore('authStore',()=>{
+
     const user = authService.getUser()
     const isAuth = authService.isAuth()
 
