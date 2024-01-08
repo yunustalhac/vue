@@ -21,6 +21,7 @@ import dersonsekiz from "@/components/onsekizinciders.vue"
 import dersondokuz from "@/components/dersondokuz.vue"
 import yirmi from "@/components/yirmi.vue"
 import yirmibir from "@/components/yirmibir.vue"
+import {useAuthStore} from "../../../../ders21/dersyirmibir/src/store/authStore.ts"
 
 const routes = [
     {
@@ -109,11 +110,43 @@ const routes = [
         name: 'yirmibir',
         component: yirmibir,
     },
+
+
+    {
+        path: "/home",
+        name: "home",
+        component: () => import("../../../../ders21/dersyirmibir/src/components/home.vue"),
+        meta: {
+            authRequired: true
+        }
+    },
+    {
+        path: "/login",
+        name: "login",
+        component: () => import("../../../../ders21/dersyirmibir/src/views/loginViews.vue")
+    },
+    {
+        path: "/about",
+        name: "about",
+        component: () => import("../../../../ders21/dersyirmibir/src/components/about.vue"),
+        meta: {
+            authRequired: true
+        }
+    }
 ];
 
 const router = createRouter({
     history: createWebHistory(),
     routes,
 });
+
+
+router.beforeEach((to) => {
+    const authStore = useAuthStore()
+
+    if (to.meta.authRequired && !authStore.isAuth) {
+        location.href = "/login"
+    }
+})
 
 export default router;
