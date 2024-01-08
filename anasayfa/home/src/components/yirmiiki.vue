@@ -5,7 +5,3 @@ import yirmiki from "../../../../ders22/yirmiiki/src/App.vue"
 <template>
   <yirmiki></yirmiki>
 </template>
-
-<style scoped>
-
-</style>

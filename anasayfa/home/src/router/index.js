@@ -21,7 +21,8 @@ import dersonsekiz from "@/components/onsekizinciders.vue"
 import dersondokuz from "@/components/dersondokuz.vue"
 import yirmi from "@/components/yirmi.vue"
 import yirmibir from "@/components/yirmibir.vue"
-import yirmiki from "@/components/yirmiki.vue"
+import yirmiki from "@/components/yirmiiki.vue"
+import yirmiuc from "@/components/yirmiuc.vue"
 import {useAuthStore} from "../../../../ders21/dersyirmibir/src/store/authStore.ts"
 
 const routes = [
@@ -114,6 +115,10 @@ const routes = [
         path: '/yirmiiki',
         name: 'yirmiki',
         component: yirmiki,
+    }, {
+        path: '/yirmiuc',
+        name: 'yirmiuc',
+        component: yirmiuc,
     },
 
 
