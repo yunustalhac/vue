@@ -1,5 +1,7 @@
 # ders21
 
+**idenetity** servisi kimlik doğrulama manasındadır
+
 **Authentication**
 > bir kullanıcının userName ve password unu girip doğrulamamızdır
 > **authorization** Authentication dan sonra giriş yapan kullanıcının nerelere girip giremeyeciğini Authorization ile

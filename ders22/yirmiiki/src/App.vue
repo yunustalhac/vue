@@ -6,9 +6,9 @@
       <router-link to="/login">login için</router-link>
     </nav>
 
-    <div v-if="authStore.isAuth&&currentUser">
+    <div v-if="isAuth&&currentUser">
       welcome: <strong>{{ currentUser.displayName }}</strong>
-    <button @click="handleLogout()">logout</button>
+      <button @click="handleLogout()">logout</button>
     </div>
     <router-view/>
   </div>
@@ -22,15 +22,17 @@ import {useAuthStore} from "@/store/authStore";
 
 const currentUser = ref()
 const authStore = useAuthStore()
+const isAuth = ref()
 
 onMounted(async () => {
   currentUser.value = await authStore.user
+  isAuth.value = await authStore.isAuth
 })
 
 const handleLogout = async () => {
   await authStore.logout()
   location.href = "/login "
-} 
+}
 </script>
 
 <style scoped>

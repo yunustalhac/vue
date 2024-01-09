@@ -23,6 +23,7 @@ import yirmi from "@/components/yirmi.vue"
 import yirmibir from "@/components/yirmibir.vue"
 import yirmiki from "@/components/yirmiiki.vue"
 import yirmiuc from "@/components/yirmiuc.vue"
+import yirmidort from "@/components/yirmidort.vue"
 import {useAuthStore} from "../../../../ders21/dersyirmibir/src/store/authStore.ts"
 
 const routes = [
@@ -119,6 +120,10 @@ const routes = [
         path: '/yirmiuc',
         name: 'yirmiuc',
         component: yirmiuc,
+    }, {
+        path: '/yirmidort',
+        name: 'yirmidort',
+        component: yirmidort,
     },
 
 

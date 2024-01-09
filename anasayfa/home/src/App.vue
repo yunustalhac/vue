@@ -28,6 +28,7 @@
     <router-link class="box" to="/yirmibir">yirmibirinci</router-link>
     <router-link class="box" to="/yirmiiki">yirmikini</router-link>
     <router-link class="box" to="/yirmiuc">yirmiüçüncü</router-link>
+    <router-link class="box" to="/yirmidort">yirmidördüncü</router-link>
     <router-view></router-view>
 
 

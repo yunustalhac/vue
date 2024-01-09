@@ -15,7 +15,7 @@
     </form>
   </div>
 
-  <p>kullanıcı adı:<b>deneme</b></p>
+  <p>kullanıcı adı:<b>deneme@mail.com</b></p>
   <p>şifre:<b>123</b></p>
 </template>
 

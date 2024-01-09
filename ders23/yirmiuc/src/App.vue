@@ -8,7 +8,7 @@
 import {useRoute} from "vue-router";
 import {ref, watch} from "vue";
 import mainLayout from "@/layouts/mainLayout.vue";
-import loginLayout from "@/layouts/loginLayout.vue";
+import loginLayout from '@/layouts/loginLayout.vue';
 
 const route = useRoute()
 const layout = ref()
