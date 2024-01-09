@@ -1,7 +1,6 @@
 <template>
   <div>
-    <h1>bu ders anasayfada çalışmıyor çünkü router ler karışıyor </h1>
-     <router-view/>
+    <h1>build edilmiş bir uygulama:)</h1>
   </div>
 </template>
 

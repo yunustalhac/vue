@@ -3,7 +3,6 @@
     <nav>
       <router-link style="margin-right: 10px;" to="/home">home</router-link>
       <router-link to="/about">about</router-link>
-      <router-link to="/login">login için</router-link>
     </nav>
 
     <div v-if="isAuth&&currentUser">
@@ -18,7 +17,7 @@
 
 
 import {onMounted, ref} from "vue";
-import {useAuthStore} from "@/store/authStore";
+import {useAuthStore} from "../store/authStore";
 
 const currentUser = ref()
 const authStore = useAuthStore()
